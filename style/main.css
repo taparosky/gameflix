@@ -1,134 +1,124 @@
-:root{
-    --vermelho:#E50914;
-    --preta:#141414;
+:root {
+    --red: #E50914;
+    --black:#141414;
 }
 
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/*elementos base*/
-body{
-   background: var(--preta);
-   font-family: 'Arial', Times, serif;
-   color:white;
+/* base */
+
+body {
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
-
-header .container{
-    display:flex;
+header .container {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content:start;
 }
 
 header .logo{
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size:40px;
+    color:var(--red);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin-right: 50px;
+    margin-left: 15px;
 }
 
-header nav a{
-    text-decoration:none;
-    color:#AAA;
-    margin-right: 10px;
+header nav a {
+    text-decoration: none;
+    color: #E9E9E9;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-header nav a:hover{
-    color:#fff;
+header nav a:hover {
+    color: #fff;
 }
 
-/*filme principal*/
-.filme-principal{
-    font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+/* main game */
 
-    height:400px;
-    background-size:cover;
- 
+.main-game {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/img/eldenring-cover.jpg');
+
+    height: 400px;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 
-
-.filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
+.container {
+    margin-left: 5%;
 }
 
-
-.filme-principal .titulo{
-    margin-top: 15%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-
-.botao{
-    background-color: rgba(0,0,0,.50);
-    border:none;
-    color: white;
-
-    padding:15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
-
-    cursor: pointer;
-    transition: .3s ease all;
-}
-
-.botao:hover{
-    background-color:white;
-    color:black;
-}
-
-.botao i{
-    margin-right: 8px;
-}
-
-
-.container{
-    margin-left: 20px;
-}
-
-.filme-principal .container{
+.main-game .container {
     width: 70%;
 }
 
-.box-filme{
+.main-game .description{
+    margin-top: 5px;
+    
+    margin-right: 10%;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    margin-top: 10%;
+    font-size: 55px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.button {
+    background-color: white;
+    border: none;
+
+    padding: 10px 20px;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight:bold;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: #DCDCDC;
+}
+
+
+#info {
+    background-color: rgba(184,183,183,.50);
+    color: white;
+}
+
+#info:hover {
+    background-color: rgba(184,183,183,.20);
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.game-box {
     height: 100%;
     width: 100%;
     display: block;
-    cursor: pointer;
 }
 
-
-.carrosel-filmes{
-    margin-top:5px;
+.games-carousel {
+    margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
