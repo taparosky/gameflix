@@ -19,6 +19,10 @@
 }
 
 @media screen and (min-width:1000px) {
+    header .container {
+        padding-bottom: 10px;
+    }
+    
     .description {
         width: 50%;
     }
